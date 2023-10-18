@@ -1,0 +1,39 @@
+Algoritmo NOTASDEALUMNOS
+	Definir ALU1, ALU2, ALU3 Como Caracter
+	Definir PRACTICA, PROBLEMAS, TEORICA , recorrido ENTERO
+	
+	recorrido = 1
+	mientras recorrido < 3 hacer
+		
+		Escribir "INGRESE NOMBRE DEL ALUMNO"
+		LEER ALU1
+		
+		Escribir "INGRESE LA NOTA DE LA PRACTICA"
+		LEER PRACTICA
+		MIENTRAS PRACTICA < 0 O PRACTICA > 10
+			Escribir "DATO INVALIDO REPETIR OPERACION"
+		FinMientras
+		
+		Escribir "INGRESE LA NOTA DE PROBLEMAS"
+		LEER PROBLEMAS
+		MIENTRAS PROBLEMAS < 0 O PROBLEMAS > 10
+			Escribir "DATO INVALIDO REPETIR OPERACION"
+		FinMientras
+		
+		Escribir "INGRESE LA PARTE TEORICA"
+		LEER TEORICA
+		MIENTRAS TEORICA < 0 O TEORICA > 10
+			Escribir "DATO INVALIDO REPETIR OPERACION"
+		FinMientras
+		
+		PRACTICA = PRACTICA * 0.1
+		PROBLEMAS = PROBLEMAS * 0.5
+		TEORICA =  TEORICA * 0.4
+		
+		Escribir "EL PROMEDIO DE LAS NOTAS DE :" ALU1 " ES " PRACTICA * 0.1 + problemas * 0.5 + teorica * 0.4
+		
+	FinMientras
+		
+	recorrido = recorrido + 1
+	
+FinAlgoritmo
